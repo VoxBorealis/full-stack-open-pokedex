@@ -4,6 +4,12 @@ app = "fullstack-11-final"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
+[deploy]
+  release_command = "npm run build"
+
+[processes]
+  app = "node app.js"
+
 [env]
   PORT=8080
 
@@ -53,8 +59,3 @@ kill_timeout = 5
     timeout       = "1s"
 
 
-[deploy]
-  release_command = "npm run build"
-
-[processes]
-  app = "node app.js"
