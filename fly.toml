@@ -3,7 +3,6 @@
 app = "fullstack-11-final"
 kill_signal = "SIGINT"
 kill_timeout = 5
-processes = []
 
 [env]
   PORT=8080
