@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Hello from shell script"
-response=$(curl http://localhost:5000/health)
+response=$(curl https://fullstack-11-final.fly.dev/health)
 if [ $response == "ok" ];
 then
 exit 0
